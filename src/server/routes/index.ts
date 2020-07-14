@@ -3,6 +3,6 @@ import chortlesRouter from './chortles';
 
 const router = express.Router();
 
-router.get('/chortles', chortlesRouter);
+router.use('/chortles', chortlesRouter);
 
 export default router;
