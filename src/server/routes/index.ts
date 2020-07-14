@@ -1,9 +1,8 @@
 import * as express from 'express';
+import chortlesRouter from './chortles';
 
 const router = express.Router();
 
-router.get('/api/hello', (req, res, next) => {
-    res.json('World');
-});
+router.get('/chortles', chortlesRouter);
 
 export default router;
