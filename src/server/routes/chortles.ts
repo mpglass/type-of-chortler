@@ -11,7 +11,9 @@ router.get('/:id', (req, res) => {
 })
 //GET /api/chortles
 router.get('/', (req, res, next) => {
-    const chortles = chortleService.GetChortles();
+    const data = chortleService.GetChortles();
+    const chortles = Object.keys(data).map((key:any) => ({id: key, ...data[key] })); 
+    chortles.pop();
     res.json(chortles);
 });
 
