@@ -22,7 +22,7 @@ class Home extends React.Component<HomeProps, HomeState> {
                     <div className="col-md-6">
                         <ul className="list-group list-group-flush">
                             {this.state.chortles.map((chortle) => (
-                                <li onClick={() => this.props.history.push(`/details/${chortle.id}`)} className="list-group-item py-5" key={`chirp-li-${chortle.id}`}>
+                                <li onClick={() => this.props.history.push(`/details/${chortle.id}`)} className="list-group-item py-5 hover" key={`chirp-li-${chortle.id}`}>
                                     <h6>@{chortle.name}</h6>
                                     <br />
                             <p>{chortle.mewsings}</p>
