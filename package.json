@@ -23,6 +23,7 @@
     "@types/react-router": "^5.1.8",
     "@types/react-router-dom": "^5.1.5",
     "bootstrap": "^4.5.0",
+    "bootswatch": "^4.5.0",
     "cors": "2.8.5",
     "css-loader": "^1.0.1",
     "dotenv": "^8.2.0",

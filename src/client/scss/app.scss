@@ -1,9 +1,14 @@
-$theme-colors: (
-    'primary': #0091ea //Covalence Blue!  :D
-);
+// $theme-colors: (
+//     'primary': #0091ea //Covalence Blue!  :D
+// );
+
+
 
 .hover {
     cursor: pointer; 
 }
 
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootswatch/dist/Solar/variables";
+@import "~bootstrap/scss/bootstrap";
+// @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootswatch/dist/Solar/bootswatch";
