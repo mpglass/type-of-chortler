@@ -21,8 +21,8 @@ class Details extends React.Component<DetailsProps, DetailsState> {
         return(
                 <section className="row justify-content-center mt-3" >
                    <div className="col-12">
-                   <h1 className="text-center">@{this.state.chortle?.name}</h1>
-                    <h1 className="text-center">{this.state.chortle?.mewsings}</h1>
+                   <h1 className="text-center text-secondary">@{this.state.chortle?.name}</h1>
+                    <h1 className="text-center text-warning">{this.state.chortle?.mewsings}</h1>
                     <div className="d-flex align-items-center justify-content-between">
                         <Link to="/">Home</Link>
                         <Link to={`/admin/${this.state.chortle?.id}`}>Admin page</Link>

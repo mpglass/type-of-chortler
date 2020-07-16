@@ -1,12 +1,15 @@
-// $theme-colors: (
-//     'primary': #0091ea //Covalence Blue!  :D
-// );
+$theme-colors: (
+  "primary": rgb(247, 240, 26),
+  "secondary": rgb(255, 31, 210),
+  "success": rgb(34, 255, 59),
+  "info": rgb(125, 37, 249),
+  "warning": rgb(41, 247, 226),
+  "danger": rgb(244, 41, 41),
+);
 
-
-
-.hover {
-    cursor: pointer; 
-}
+.hover{
+  cursor: pointer
+};
 
 @import "~bootswatch/dist/Solar/variables";
 @import "~bootstrap/scss/bootstrap";

@@ -22,13 +22,13 @@ class Home extends React.Component<HomeProps, HomeState> {
                     <div className="col-md-6">
                         <ul className="list-group list-group-flush">
                             {this.state.chortles.map((chortle) => (
-                                <li onClick={() => this.props.history.push(`/details/${chortle.id}`)} className="list-group-item py-5 hover" key={`chirp-li-${chortle.id}`}>
-                                    <h6>@{chortle.name}</h6>
+                                <li onClick={() => this.props.history.push(`/details/${chortle.id}`)} className="list-group-item py-3 hover" key={`chirp-li-${chortle.id}`}>
+                                    <h6 className="text-secondary">@{chortle.name}</h6>
                                     <br />
-                            <p>{chortle.mewsings}</p>
+                            <p className="text-warning">{chortle.mewsings}</p>
                             <br />
-                            <small className="text-muted">
-                                <i>
+                            <small >
+                                <i className="text-info">
                                     ~{moment(chortle.written_at).format('MMMM Do YYYY, h:mm:ss a')}
                                 </i>
                             </small>

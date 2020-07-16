@@ -18,23 +18,23 @@ $gray-800: #073642 !default;
 $gray-900: #002B36 !default;
 $black:    #000 !default;
 
-$blue:    #B58900 !default;
+$blue:    rgb(247, 240, 26) !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$purple:  rgb(125, 37, 249) !default;
+$pink:    rgb(255, 31, 210) !default;
 $red:     #D33682 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #CB4B16 !default;
+$yellow:  rgb(244, 41, 41) !default;
 $green:   #2AA198 !default;
-$teal:    #20c997 !default;
-$cyan:    #268BD2 !default;
+$teal:    rgb(41, 247, 226) !default;
+$cyan:    rgb(34, 255, 59) !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$primary:       rgb(247, 240, 26);
+$secondary:     rgb(255, 31, 210);
+$success:       rgb(34, 255, 59);
+$info:          rgb(125, 37, 249);
+$warning:       rgb(41, 247, 226);
+$danger:        rgb(244, 41, 41);
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 

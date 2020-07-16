@@ -40,15 +40,15 @@ class Compose extends React.Component<ComposeProps, ComposeState> {
     return (
       <section className="row justify-content-center mt-5">
         <div className="col-md-10">
-          <form className="form-group p-3 border rounded-lg shadow-sm">
-            <label htmlFor="name">Name</label>
+          <form className="form-group p-3 border border-info rounded-lg shadow">
+            <label htmlFor="name" className="text-secondary">Name</label>
             <input
               value={this.state.name}
               onChange={this.handleNameChange}
               type="text"
               className="form-control my-1"
             />
-            <label htmlFor="mewsings">Mewsings</label>
+            <label htmlFor="mewsings" className="text-warning">Mewsings</label>
             <textarea
               value={this.state.mewsings}
               onChange={this.handleMewsingsChange}
@@ -57,7 +57,7 @@ class Compose extends React.Component<ComposeProps, ComposeState> {
             />
             <button
               onClick={this.handleChortleSubmit}
-              className="btn btn-dark btn-block mt-3 mx-auto w-50"
+              className="btn btn-success btn-block mt-3 mx-auto w-50"
             >
               Post
             </button>

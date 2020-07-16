@@ -60,15 +60,15 @@ class Admin extends React.Component<AdminProps, AdminState> {
         return(
             <section className="row justify-content-center mt-5">
             <div className="col-md-10">
-              <form className="form-group p-3 border rounded-lg shadow-sm">
-                <label htmlFor="name">Name</label>
+              <form className="form-group p-3 border border-warning rounded-lg shadow-sm">
+                <label htmlFor="name" className="text-secondary">Name</label>
                 <input
                   value={this.state.name}
                   onChange={this.handleNameChange}
                   type="text"
                   className="form-control my-1"
                 />
-                <label htmlFor="mewsings">Mewsings</label>
+                <label htmlFor="mewsings" className="text-info">Mewsings</label>
                 <textarea
                   value={this.state.mewsings}
                   onChange={this.handleMewsingsChange}
@@ -77,7 +77,7 @@ class Admin extends React.Component<AdminProps, AdminState> {
                 />
                 <button
                   onClick={this.handleChortleEdit}
-                  className="btn btn-dark btn-block mt-3 mx-auto w-50"
+                  className="btn btn-success btn-block mt-3 mx-auto w-50"
                 >
                  Save Changes
                 </button>
@@ -89,7 +89,7 @@ class Admin extends React.Component<AdminProps, AdminState> {
                 </button>
                 <Link
                   to={`/details/${this.props.match.params.chortleid}`}
-                  className="btn btn-dark btn-block mt-3 mx-auto w-50"
+                  className="btn btn-warning btn-block mt-3 mx-auto w-50"
                 >
                   Back to Chortle
                 </Link>
