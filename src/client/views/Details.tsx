@@ -25,7 +25,7 @@ class Details extends React.Component<DetailsProps, DetailsState> {
                     <h1 className="text-center">{this.state.chortle?.mewsings}</h1>
                     <div className="d-flex align-items-center justify-content-between">
                         <Link to="/">Home</Link>
-                        <Link to={`/admin.${this.state.chortle?.id}`}>Admin page</Link>
+                        <Link to={`/admin/${this.state.chortle?.id}`}>Admin page</Link>
                     </div>
                    </div>
                 </section>

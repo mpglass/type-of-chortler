@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/:id', (req, res) => {
     const id = Number(req.params.id);
     const chortle = chortleService.GetChortle(id); 
-    res.json(chortle)
+    res.json({id, ...chortle});
 })
 //GET /api/chortles
 router.get('/', (req, res, next) => {
